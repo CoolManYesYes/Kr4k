@@ -199,7 +199,7 @@ function Lib.Window(Title)
 	local first = true
 
 	function TabSys.CreateTab(TabTitle)
-		TabTitle = TabTitle or "Home"
+		TabTitle = TabTitle
 
 		local TabContent = Instance.new("ScrollingFrame")
 		local TabSwitcher = Instance.new("TextButton")
@@ -397,7 +397,7 @@ function Lib.Window(Title)
 		end
 
 		function Content.CreateSlider(SliderTitle, minvalue, maxvalue, callback)
-			SliderTitle = SliderTitle or "Slider"
+			SliderTitle = SliderTitle
 			minvalue = minvalue or 16
 			maxvalue = maxvalue or 100
 			callback = callback or function() end
@@ -548,7 +548,7 @@ function Lib.Window(Title)
 		end
 		
 		function Content.CreateToggle(TogTXT, callback)
-			TogTXT = TogTXT or "Toggle"
+			TogTXT = TogTXT
 			callback = callback or function() end
 			local toggled = false
 			
@@ -719,7 +719,7 @@ function Lib.Window(Title)
 		end
 		
 		function Content.CreateKeybind(KeybindTitle, first, callback)
-			KeybindTitle = KeybindTitle or "Keybind"
+			KeybindTitle = KeybindTitle
 			local oldKey = first.Name
 			callback = callback or function() end
 
@@ -828,7 +828,7 @@ function Lib.Window(Title)
 		end
 		
 		function Content.CreateTextbox(TextboxTitle, callback)
-			TextboxTitle = TextboxTitle or "Textbox"
+			TextboxTitle = TextboxTitle
 			callback = callback or function() end
 			
 			local TextboxFrame = Instance.new("Frame")
@@ -919,7 +919,7 @@ function Lib.Window(Title)
 		
 		function Content.CreateDropdown(DropdownTitle, list, callback)
 			callback = callback or function() end
-			DropdownTitle = DropdownTitle or "Dropdown"
+			DropdownTitle = DropdownTitle
 			list = list or {}
 			local IsDropped = false
 			local DropYSize = 134
