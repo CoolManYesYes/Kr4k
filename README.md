@@ -52,7 +52,7 @@ Test1.CreateKeybind("Print on key!", Enum.KeyCode.F, function()
 end)
 ```
 
-# ptoggling ui with keybinds:
+# toggling ui with keybinds:
 
 ```luau
 Test1.CreateKeybind("Toggle UI", Enum.KeyCode.RightAlt, function()
